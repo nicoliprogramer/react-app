@@ -1,23 +1,18 @@
 import './estilo.css';
+import 'core-js/actual';
 
 function App() {
-  let imagen = "1-2-e1610552906250-300x300.jpg";
-  let titulo = "Desayunos y regalos sorpresa";
-  let subtitulo = "Envios a domicilio en Córdoba Capital"
-  const producto = { id: 1, image: imagen, title: titulo, subtitle: subtitulo }
+  // console.log(new Set([1, 2, 3, 4, 3, 2, 1, 1]));
+  // console.log(new Set(["a", "b", "c", "a", "b"]));
+  // console.log([1, 2, 3, 3, 2, 1, 1]);
+  // console.log(new Set([{ id: 1, nombre: "coca" }, { id: 2, nombre: "pepsi" }, { id: 1, nombre: "coca" }]));
+  // console.log([1, [2, 3], [4, [5]]].flat(1));
 
   return (
-    <div className="container">
-      <div className='row'>
-        <div className='col-md-4 offset-md-2'>
-          <img src={producto.image} alt={producto.title} className="img-fluid" />
-        </div>
-        <div className='col-md-4'>
-          <h1>{producto.title}</h1>
-          <p>{producto.subtitle}</p>
-        </div>
-      </div>
-    </div >
+    <div>
+      <header />
+      <h3>Hola Coders!</h3>
+    </div>
   );
 }
 
